@@ -3,6 +3,7 @@ package com.afs.restapi.service;
 import com.afs.restapi.entity.Todo;
 import com.afs.restapi.exception.TodoNotFoundException;
 import com.afs.restapi.repository.TodoRepository;
+import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,7 @@ public class TodoService {
         this.todoRepository = todoRepository;
     }
 
+    @Tool(name="findTodos", description = "Find all my todo tasks.")
     public List<Todo> findAll() {
         return todoRepository.findAll();
     }

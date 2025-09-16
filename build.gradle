@@ -23,7 +23,11 @@ dependencies {
 
     implementation 'org.commonmark:commonmark:0.25.1'
 
-	runtimeOnly 'com.h2database:h2'
+    implementation "org.springframework.ai:spring-ai-starter-model-openai:1.0.2"
+    implementation 'org.springframework.ai:spring-ai-starter-mcp-server:1.0.2'
+    implementation 'org.springframework.ai:spring-ai-starter-mcp-server-webmvc:1.0.2'
+
+    runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 }
 
