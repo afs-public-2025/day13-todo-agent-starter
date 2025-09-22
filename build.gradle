@@ -23,8 +23,14 @@ dependencies {
 
     implementation 'org.commonmark:commonmark:0.25.1'
 
+    ///
     implementation "org.springframework.ai:spring-ai-starter-model-openai:1.0.1"
     implementation 'org.springframework.ai:spring-ai-starter-mcp-server:1.0.1'
+
+    // rag
+    implementation("org.springframework.ai:spring-ai-advisors-vector-store:1.0.2")
+    implementation("org.springframework.ai:spring-ai-starter-model-transformers:1.0.2")
+
     /// https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html
     implementation 'org.springframework.ai:spring-ai-starter-mcp-server-webmvc:1.0.1'
 
